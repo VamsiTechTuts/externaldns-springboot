@@ -70,6 +70,7 @@ Deploying mandatory files for
 Create Certificates:
 -------------
 Create Certificates for our external-dns using AWS Certificate Manager
+
 Deploying externaldns, service and ingress:
 ----------
 change our external dns in below yml files and certificate arn
