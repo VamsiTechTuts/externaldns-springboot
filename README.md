@@ -67,9 +67,12 @@ Deploying mandatory files for
 ----------
 	kubectl apply -f mandatory.yaml
 	kubectl apply -f patch-configmap-l4.yaml
+Create Certificates:
+-------------
+Create Certificates for our external-dns using AWS Certificate Manager
 Deploying externaldns, service and ingress:
 ----------
-change our external dns in below yml files
+change our external dns in below yml files and certificate arn
 
 	kubectl apply -f external-dns.yaml
 	kubectl apply -f service-l4.yaml
