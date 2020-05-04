@@ -1,4 +1,42 @@
-# externaldns-springboot
+# Create External-DNS for Springboot Application
+
+Pre-requisites:
+-------
+
+  Install:
+      - git
+      - Java
+      - Maven
+      - docker
+  EKS Cluster
+
+Attach below policy to Node Instance Role
+-----------
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:ListHostedZones",
+                "route53:ListResourceRecordSets"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "route53:ChangeResourceRecordSets"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
 
 Get Source Code from github:
 ---------------
