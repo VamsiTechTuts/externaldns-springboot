@@ -71,10 +71,10 @@ You can check the secrets:
 	kubectl describe secrets mysql-user-pass
 Deploying MySQL & PV:
 -----------
-	Kubectl apply -f mysql-service.yml
-	Kubectl apply -f mysql.deployment.yml
-	Kubectl apply -f mysql-pv.yml
-	Kubectl apply -f mysql-pv-claim.yml
+	kubectl apply -f mysql-service.yml
+	kubectl apply -f mysql.deployment.yml
+	kubectl apply -f mysql-pv.yml
+	kubectl apply -f mysql-pv-claim.yml
 To check Persistent volumes and Persistentvolumeclaim:
 --------------
 	kubectl get persistentvolumes
