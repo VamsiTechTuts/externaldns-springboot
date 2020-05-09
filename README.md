@@ -51,9 +51,13 @@ Docker login:
 -----------
 We need to login before push image to docker hub
 	docker login 
+[root@ip-172-31-29-58 ~]# docker images
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+vamsitechtuts/employee-jdbc   latest              92cbaf11321e        8 minutes ago       134MB
+openjdk                       8-jdk-alpine        a3562aa0b991        12 months ago       105MB
 Tag docker image:
 --------
-	docker tag employee-jdbc vamsitechtuts/employee-jdbc
+	docker tag 92cbaf11321e vamsitechtuts/employee-jdbc
 push docker image to docker hub:
 ---------
 	docker push vamsitechtuts/employee-jdbc
