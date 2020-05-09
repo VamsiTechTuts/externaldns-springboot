@@ -40,7 +40,7 @@ Attach below policy to Node Instance Role
 
 Get Source Code from github:
 ---------------
-	https://github.com/Naresh240/employee-jdbc.git
+	https://github.com/VamsiTechTuts/externaldns-springboot.git
 Build artifact by using below command:
 ----------------
 	mvn clean install
@@ -53,7 +53,7 @@ We need to login before push image to docker hub
 	docker login 
 Tag docker image:
 --------
-	docker tag employee-jdbc naresh240/employee-jdbc
+	docker tag employee-jdbc vamsitechtuts/employee-jdbc
 push docker image to docker hub:
 ---------
 	docker push vamsitechtuts/employee-jdbc
