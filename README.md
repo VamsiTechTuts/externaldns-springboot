@@ -40,7 +40,7 @@ Attach below policy to Node Instance Role
 
 Get Source Code from github:
 ---------------
-	https://github.com/VamsiTechTuts/externaldns-springboot.git
+  git clone https://github.com/VamsiTechTuts/externaldns-springboot.git
 Build artifact by using below command:
 ----------------
 	mvn clean install
