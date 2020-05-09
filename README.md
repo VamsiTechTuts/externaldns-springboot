@@ -46,7 +46,7 @@ Build artifact by using below command:
 	mvn clean install
 Create docker image:
 ----------
-	docker build -t naresh240/employee-jdbc .
+	docker build -t vamsitechtuts/employee-jdbc .
 Docker login:
 -----------
 We need to login before push image to docker hub
@@ -56,14 +56,14 @@ Tag docker image:
 	docker tag employee-jdbc naresh240/employee-jdbc
 push docker image to docker hub:
 ---------
-	docker push naresh240/employee-jdbc
+	docker push vamsitechtuts/employee-jdbc
 Creating the secrets:
 ---------
 You can create secrets manually from a literal or file using the kubectl create secret command, or you can create them from a generator using Kustomize.
 In this article, we’re gonna create the secrets manually:
 
-	kubectl create secret generic mysql-root-pass --from-literal=password=Naresh#240
-	kubectl create secret generic mysql-user-pass --from-literal=username=naresh --from-literal=password=Naresh#240
+	kubectl create secret generic mysql-root-pass --from-literal=password=Vamsi#240
+	kubectl create secret generic mysql-user-pass --from-literal=username=vamsi --from-literal=password=Vamsi#240
 	kubectl create secret generic mysql-db-url --from-literal=database=mysqldb --from-literal=url='jdbc:mysql://employee-jdbc-mysql:3306/mysqldb'
 You can check the secrets:
 ------------
